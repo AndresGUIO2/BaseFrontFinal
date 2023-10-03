@@ -1,0 +1,5 @@
+.mat-tab-group {
+    max-height: calc(150vh - 150px); /* 100px es un ejemplo, ajusta según necesites */
+    overflow-y: auto;
+  }
+  
