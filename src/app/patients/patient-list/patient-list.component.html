@@ -1,11 +1,7 @@
 <div class="row justify-content-center">
     <ng-container *ngFor="let patient of patients; let i = index">
-        <div class="col-2 text-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
             <app-patient [patient]="patient"></app-patient>
         </div>
-        <!-- Salto de línea cada 5 elementos en dispositivos grandes -->
-        <div *ngIf="(i + 1) % 5 === 0" class="w-100 d-none d-sm-block"></div>
-        <!-- Salto de línea después de cada elemento en teléfonos -->
-        <div *ngIf="(i + 1) % 1 === 0" class="w-100 d-block d-sm-none"></div>
     </ng-container>
 </div>
